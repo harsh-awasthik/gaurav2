@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
@@ -7,70 +8,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-
     <title>Gaurav Portfolio</title>
   </head>
+
+
   <body>
+
     <nav>
-      <ul class="sidebar">
-        <div class="cross" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div>
-        <div class ='navlist'>
-          <a href="stories.html">Stories</a>
-          <a href="archieve.html">Archieve</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </ul>
-      <ul>
-        <a class='mainhead' href="index.html">Gaurav Awasthi</a>
-        <div class="hideOnMobile dropdown">
-          <a href="stories.html">Stories</a>
-          <div class="dropdown-content">
-            <a href="concept.html">Concept</a>
-            <a href="fashion.html">Fashion</a>
-            <a href="sakhi.html">Sakhi</a>
-            <a href="sangam.html">Sangam</a>
-            <a href="shivaji.html">ShivaJi Theatre</a>
-          </div>
-        </div>
-        <li class="hideOnMobile"><a href="archieve.html">Archieve</a></li>
-        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
-        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
-      </ul>
+      <div class="navigation">
+        <a class='center' href="index.html">Gaurav Awasthi</a>
+        <a class='right' href="about.html">about me</a></li>
+      </div>      
     </nav>
   
     <main>
-    <div class="full-images concept">
+    <a class="full-images concept" href="concept.html">
         <h3>Concept</h3>
         <p>text something something</p>
-    </div>
-    <div class="fashion full-images">
+    </a>
+    <a class="fashion full-images" href="fashion.html">
         <h3>Fashion</h3>
         <p>text something something</p>
-    </div>
-    <div class="full-images sakhi">
+    </a>
+    <a class="full-images sakhi" href="sakhi.html">
         <h3>Sakhi</h3>
         <p>text something something</p>
-    </div>
-    <div class="full-images sangam">
+    </a>
+    <a class="full-images sangam" href="sangam.html">
         <h3>Sangam</h3>
         <p>text something something</p>
-    </div>
-    <div class="full-images shivaji">
+    </a>
+    <a class="full-images shivaji" href="shivaji.html">
         <h3>Shivaji Theatre</h3>
         <p>text something something</p>
-    </div>
+    </a>
     </main>
 
-
-    <script>
-      function showSidebar(){
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'flex'
-      }
-      function hideSidebar(){
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'none'
-      }
-    </script>
   </body>
 </html>

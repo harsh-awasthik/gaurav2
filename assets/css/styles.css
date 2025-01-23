@@ -8,18 +8,15 @@
     max-width: 300px;
 }
 
-.col1 {
+.about-section {
     flex: 1;
-    max-width: 30%;
+    width: 100%;
+    max-width: 100vw;
     background-color: lightgray;
     padding: 20px;
   }
-@media (max-width: 800px) {
-    .col1 {
-      max-width: 100%;
-      height: auto;
-    }
-}
+
+
 .full-images {
   width: 100%;
   height: 80vh;
@@ -34,7 +31,6 @@
   background-position: center center;
   color: white;
   text-align: center;
-  padding: 20px;
   font-size: 2em;
 }
 
@@ -60,114 +56,9 @@
   background-position: center center;
 }
 
-.stories-content {
-  display: grid; 
-  gap: 16px; 
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  justify-content: center; 
-  padding: 20px;
-}
-
-.text-stories {
-  margin-top: 10vh;
-  width: 100%;
-  max-width: 75vw;
-}
-
-.col-s {
-  display: flex;
-  justify-content: center; /* Center each card within its column */
-}
-
-.stories-content {
-  display: grid;
-  gap: 2vw; 
-  grid-template-columns: repeat(auto-fill, minmax(250px, 0fr)); 
-  justify-content: center;
-  padding: 20px;
-}
-
-
-.card-s { 
-  position: relative;
-  height: auto; 
-  aspect-ratio: 3/4;
-  border-radius: 10px;
-  padding: 30px;
-  box-sizing: content-box;
-  cursor: pointer;
-  background-image: url("../images/s/concept/concept1.jpg");
-  background-position: center;
-  background-size: cover;
-  background-color: #f0f0f0;
-  display: flex;
-  transition: all .5s ease-in-out;
-  overflow: hidden; 
-  
-}
-
-.card-s::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out; 
-}
-
-.card-s .text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  color: black; 
-  font-size: 24px;
-  font-weight: bold;
-  opacity: 0;
-  z-index: 50;
-  transition: opacity 0.3s ease-in-out;
-  text-align: center;
-}
-
-.card-s:hover::after {
-  opacity: 1;
-}
-
-.card-s:hover .text {
-  opacity: 1;
-}
-
-.card-concept {
-  background-image: url("../images/s/concept/concept1.jpg");
-}
-
-
-.card-sangam {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 25%, rgba(0, 0, 0, 0) 75%), url("../images/s/sangam/sangam1.jpg");
-}
-
-.card-shivaji {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7) 25%, rgba(0, 0, 0, 0) 75%), url("../images/s/shivaji/shivaji14.jpg");
-}
-
-.card-sakhi {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7) 25%, rgba(0, 0, 0, 0) 75%), url("../images/s/sakhi/sakhi1.jpg");
-}
-
-.card-fashion {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7) 25%, rgba(0, 0, 0, 0) 75%), url("../images/s/fashion/fashion1.jpg");
-}
-
-.card-sangam {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7) 25%, rgba(0, 0, 0, 0) 75%), url("../images/s/sangam/sangam1.jpg");
-}
-
 
 .gallery {
-  max-width: 70%;
+  max-width: 95vw;
   margin: 0 auto;
   column-count: 4;
 }
